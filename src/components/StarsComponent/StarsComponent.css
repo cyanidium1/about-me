@@ -9,6 +9,12 @@
   transform-origin: center;
 }
 
+@media (max-width: 767px) {
+  .earth {
+    bottom: -40vw; /* Adjust this value for a different position on smaller screens */
+  }
+}
+
 .ufo {
   z-index: 1;
   top: 150px;

@@ -1,77 +1,84 @@
-import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import PropTypes from 'prop-types';
-import Fade from 'react-reveal';
-import { Container } from 'react-bootstrap';
+import React from 'react';
+import { Fade } from 'react-reveal';
+import {
+  FaHtml5,
+  FaCss3,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaAndroid,
+  FaPython,
+  FaDatabase,
+  FaCode,
+  FaToolbox,
+  FaGithub,
+  FaNpm,
+  FaTerminal,
+} from 'react-icons/fa';
 import Header from './Header';
-import endpoints from '../constants/endpoints';
-import FallbackSpinner from './FallbackSpinner';
 
-const styles = {
-  iconStyle: {
-    height: 75,
-    width: 75,
-    margin: 10,
-    marginBottom: 0,
-  },
-  introTextContainer: {
-    whiteSpace: 'pre-wrap',
-  },
-};
+const Skills = () => {
+  const iconSize = 32;
 
-function Skills(props) {
-  const { header } = props;
-  const [data, setData] = useState(null);
-
-  const renderSkillsIntro = (intro) => (
-    <h4 style={styles.introTextContainer}>
-      <ReactMarkdown children={intro} />
-    </h4>
-  );
-
-  useEffect(() => {
-    fetch(endpoints.skills, {
-      method: 'GET',
-    })
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => err);
-  }, []);
+  const skillsData = [
+    {
+      title: 'Languages & Databases',
+      items: [
+        { title: 'JavaScript', icon: <FaHtml5 size={iconSize} /> },
+        { title: 'TypeScript', icon: <FaCss3 size={iconSize} /> },
+        { title: 'MongoDB', icon: <FaDatabase size={iconSize} /> },
+        { title: 'Python', icon: <FaPython size={iconSize} /> },
+      ],
+    },
+    {
+      title: 'Frameworks & Technologies',
+      items: [
+        { title: 'Android', icon: <FaAndroid size={iconSize} /> },
+        { title: 'React', icon: <FaReact size={iconSize} /> },
+        { title: 'React Native', icon: <FaReact size={iconSize} /> },
+        { title: 'Node.js', icon: <FaNodeJs size={iconSize} /> },
+      ],
+    },
+    {
+      title: 'Tools & Platforms',
+      items: [
+        { title: 'VSCode', icon: <FaCode size={iconSize} /> },
+        { title: 'GitHub', icon: <FaGithub size={iconSize} /> },
+        { title: 'Npm', icon: <FaNpm size={iconSize} /> },
+        { title: 'Terminal', icon: <FaTerminal size={iconSize} /> },
+      ],
+    },
+    {
+      title: 'Web Technologies',
+      items: [
+        { title: 'HTML5', icon: <FaHtml5 size={iconSize} /> },
+        { title: 'CSS3', icon: <FaCss3 size={iconSize} /> },
+        { title: 'Sass', icon: <FaSass size={iconSize} /> },
+        { title: 'Webpack', icon: <FaToolbox size={iconSize} /> },
+      ],
+    },
+  ];
 
   return (
-    <>
-      <Header title={header} />
-      {data ? (
-        <Fade>
-          <div className="section-content-container">
-            <Container>
-              {renderSkillsIntro(data.intro)}
-              {data.skills?.map((rows) => (
-                <div key={rows.title}>
-                  <br />
-                  <h3>{rows.title}</h3>
-                  {rows.items.map((item) => (
-                    <div key={item.title} style={{ display: 'inline-block' }}>
-                      <img
-                        style={styles.iconStyle}
-                        src={item.icon}
-                        alt={item.title}
-                      />
-                      <p>{item.title}</p>
-                    </div>
-                  ))}
+    <Fade>
+      <Header title={'Skills'} />
+      <div className="skills">
+        {skillsData.map((section) => (
+          <div key={section.title} className="mb-2">
+            <h3 className="text-xl font-semibold mb-2">{section.title}</h3>
+            <div className="flex items-center">
+              {section.items.map((item) => (
+                <div key={item.title} className="flex items-center flex-col text-center mx-auto">
+                  {item.icon}
+                  <p className="text-sm">{item.title}</p>
                 </div>
               ))}
-            </Container>
+            </div>
           </div>
-        </Fade>
-      ) : <FallbackSpinner /> }
-    </>
+        ))}
+      </div>
+    </Fade>
   );
-}
-
-Skills.propTypes = {
-  header: PropTypes.string.isRequired,
 };
 
 export default Skills;

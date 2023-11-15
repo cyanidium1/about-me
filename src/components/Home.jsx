@@ -37,12 +37,12 @@ function Home() {
   return data ? (
     <Fade>
       <div className="relative overflow-hidden">
-        <div className="absolute top-1/4 w-full flex justify-center z-50">
+        <div className="top-1/2 absolute xl:top-1/4 w-full flex justify-center z-50">
           <Social />
         </div>
         <StarsComponent showEarth={true}>
           <div className="mt-4 h-full flex flex-col items-center">
-            <h1 className="text-7xl">{data?.name}</h1>
+            <h1 className="text-7xl">Fedir Alpatov</h1>
             <div className="flex-row">
               <h2 className="inline-block">I&apos;m&nbsp;</h2>
               <Typewriter

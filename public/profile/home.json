@@ -1,4 +1,7 @@
 {
-    "name": "Your Name",
-    "roles": ["a Developer", "a Freelancer"]
+    "roles": [
+        "a Developer",
+        "a Freelancer",
+        "a Creator"
+    ]
 }

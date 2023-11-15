@@ -1,149 +1,69 @@
 {
-    "projects" : [
+    "projects": [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "image": "images/projects/UrbexWeb.png",
+            "title": "Visual Novel Engine",
+            "bodyText": "Raw version of an interactive stories engine that enables users to import their visual novel stories and play them. The engine supports features such as inventory management, interactive buttons, and clickable areas. The pre-loaded plot for the Urbex Metro game has been imported, although it remains unfinished. This project serves as a demonstration of my software development abilities. The development of this engine laid the groundwork for my subsequent Android project, where these features were further refined and implemented.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
+                    "href": "https://github.com/cyanidium1/visual-novel-engine-v2"
                 },
                 {
                     "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://cyanidium1.github.io/visual-novel-engine-v2"
                 }
             ],
-            "tags" : [
+            "tags": [
                 "React",
                 "Portfolio",
                 "JavaScript"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "image": "images/projects/Urbex.jpg",
+            "title": "Urbex Metro Game",
+            "bodyText": "Designed and developed an engaging interactive story Android game that immerses players in the exploration of intricate subway tunnels, where they embark on a quest to discover 15 hidden Pokémon characters. The game boasts diverse mechanics, including multiple endings, an inventory system, progress tracking, lives management, and strategically placed advertisements for effective monetization. Noteworthy features include dynamic animations, captivating 3D scenes, and multilingual support with options available in five languages. \n Please note that the live version may experience performance issues due to animation lags. For the best experience, it is recommended to download and run the APK version.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
+                    "href": "https://github.com/cyanidium1/urbex-metro-game"
                 },
                 {
                     "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
-            ]
-        },
-        {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
-            "links": [
+                    "href": "https://appetize.io/app/umjjjwhdakikeb7mrb2yga43em?device=pixel7pro&osVersion=13.0&orientation=landscape"
+                },
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "text": "Download APK",
+                    "href": "https://drive.google.com/file/d/1sYZkoJlFg76bybUa_OCBq5_w166LpA6Q/view?usp=sharing"
                 }
             ],
-            "tags" : [
-                "Java",
+            "tags": [
+                "JavaScript",
+                "React Native",
                 "Android",
-                "Alarm Manager",
-                "VIT"
+                "Tailwind"
             ]
         },
         {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
+            "image": "images/projects/your-pet.png",
+            "title": "Your Pet",
+            "bodyText": "Led a collaborative team effort as the project lead in developing a comprehensive web application that facilitates the process of finding or selling pets. This dynamic platform seamlessly integrates a React-based frontend with a Node.js backend supported by MongoDB. The project boasts a responsive design for optimal user experience across devices. The application features robust functionality, including intricate search capabilities, user-friendly login processes (including Google authentication), personalized user dashboards, and an array of modal windows to enhance user interaction. The emphasis on adaptability, coupled with the implementation of complex search algorithms, sets this project apart as a user-centric solution for pet enthusiasts and sellers alike.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
+                    "href": "https://github.com/cyanidium1/your-pet-front"
+                },
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
+                    "text": "Live",
+                    "href": "https://cyanidium1.github.io/your-pet-front/"
                 }
             ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+            "tags": [
+                "JavaScript",
+                "React",
+                "NodeJS",
+                "MongoDB"
             ]
         }
     ]
