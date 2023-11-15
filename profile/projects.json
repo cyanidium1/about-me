@@ -1,0 +1,70 @@
+{
+    "projects": [
+        {
+            "image": "images/projects/UrbexWeb.png",
+            "title": "Visual Novel Engine",
+            "bodyText": "Raw version of an interactive stories engine that enables users to import their visual novel stories and play them. The engine supports features such as inventory management, interactive buttons, and clickable areas. The pre-loaded plot for the Urbex Metro game has been imported, although it remains unfinished. This project serves as a demonstration of my software development abilities. The development of this engine laid the groundwork for my subsequent Android project, where these features were further refined and implemented.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/cyanidium1/visual-novel-engine-v2"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://cyanidium1.github.io/visual-novel-engine-v2"
+                }
+            ],
+            "tags": [
+                "React",
+                "Portfolio",
+                "JavaScript"
+            ]
+        },
+        {
+            "image": "images/projects/Urbex.jpg",
+            "title": "Urbex Metro Game",
+            "bodyText": "Designed and developed an engaging interactive story Android game that immerses players in the exploration of intricate subway tunnels, where they embark on a quest to discover 15 hidden Pokémon characters. The game boasts diverse mechanics, including multiple endings, an inventory system, progress tracking, lives management, and strategically placed advertisements for effective monetization. Noteworthy features include dynamic animations, captivating 3D scenes, and multilingual support with options available in five languages. \n Please note that the live version may experience performance issues due to animation lags. For the best experience, it is recommended to download and run the APK version.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/cyanidium1/urbex-metro-game"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://appetize.io/app/umjjjwhdakikeb7mrb2yga43em?device=pixel7pro&osVersion=13.0&orientation=landscape"
+                },
+                {
+                    "text": "Download APK",
+                    "href": "https://drive.google.com/file/d/1sYZkoJlFg76bybUa_OCBq5_w166LpA6Q/view?usp=sharing"
+                }
+            ],
+            "tags": [
+                "JavaScript",
+                "React Native",
+                "Android",
+                "Tailwind"
+            ]
+        },
+        {
+            "image": "images/projects/your-pet.png",
+            "title": "Your Pet",
+            "bodyText": "Led a collaborative team effort as the project lead in developing a comprehensive web application that facilitates the process of finding or selling pets. This dynamic platform seamlessly integrates a React-based frontend with a Node.js backend supported by MongoDB. The project boasts a responsive design for optimal user experience across devices. The application features robust functionality, including intricate search capabilities, user-friendly login processes (including Google authentication), personalized user dashboards, and an array of modal windows to enhance user interaction. The emphasis on adaptability, coupled with the implementation of complex search algorithms, sets this project apart as a user-centric solution for pet enthusiasts and sellers alike.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/cyanidium1/your-pet-front"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://cyanidium1.github.io/your-pet-front/"
+                }
+            ],
+            "tags": [
+                "JavaScript",
+                "React",
+                "NodeJS",
+                "MongoDB"
+            ]
+        }
+    ]
+}
