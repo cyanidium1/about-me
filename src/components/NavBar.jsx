@@ -61,16 +61,20 @@ const NavBar = () => {
       expanded={expanded}
     >
       <Container>
-        <img
-          src={portal}
-          className="d-inline-block align-top"
-          alt="main logo"
-          style={
-            data?.logo?.height && data?.logo?.width
-              ? { height: data?.logo?.height, width: data?.logo?.width }
-              : styles.logoStyle
-          }
-        />
+        {data?.logo && (
+          <Navbar.Brand href='https://cyanidium1.github.io/about-me/'>
+            <img
+              src={portal}
+              className="d-inline-block align-top"
+              alt="main logo"
+              style={
+                data?.logo?.height && data?.logo?.width
+                  ? { height: data?.logo?.height, width: data?.logo?.width }
+                  : styles.logoStyle
+              }
+            />
+          </Navbar.Brand>
+        )}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(!expanded)}
