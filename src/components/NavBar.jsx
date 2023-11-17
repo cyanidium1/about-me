@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import ThemeToggler from './ThemeToggler';
-import portal from '../images/portal.gif'
 
 const styles = {
   logoStyle: {
@@ -61,20 +60,7 @@ const NavBar = () => {
       expanded={expanded}
     >
       <Container>
-        {data?.logo && (
 
-          <img
-            src={portal}
-            className="d-inline-block align-top"
-            alt="main logo"
-            style={
-              data?.logo?.height && data?.logo?.width
-                ? { height: data?.logo?.height, width: data?.logo?.width }
-                : styles.logoStyle
-            }
-          />
-
-        )}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(!expanded)}
