@@ -6,13 +6,6 @@ import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import ThemeToggler from './ThemeToggler';
 
-const styles = {
-  logoStyle: {
-    width: 50,
-    height: 40,
-  },
-};
-
 const ExternalNavLink = styled.a`
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
