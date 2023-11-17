@@ -62,18 +62,18 @@ const NavBar = () => {
     >
       <Container>
         {data?.logo && (
-          <Navbar.Brand href="/about-me">
-            <img
-              src={portal}
-              className="d-inline-block align-top"
-              alt="main logo"
-              style={
-                data?.logo?.height && data?.logo?.width
-                  ? { height: data?.logo?.height, width: data?.logo?.width }
-                  : styles.logoStyle
-              }
-            />
-          </Navbar.Brand>
+
+          <img
+            src={portal}
+            className="d-inline-block align-top"
+            alt="main logo"
+            style={
+              data?.logo?.height && data?.logo?.width
+                ? { height: data?.logo?.height, width: data?.logo?.width }
+                : styles.logoStyle
+            }
+          />
+
         )}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
